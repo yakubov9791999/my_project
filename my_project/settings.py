@@ -18,7 +18,10 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 
 # Quick-start development settings - unsuitable for productiona
 # assert ascii(ascii(ascii(sa)))
-# See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
+# See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/asd
+# asd
+# asd
+
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '8@kudo49&(p-z$qf_3!c@78&33228gx7=c_z4iu1rx9#%f1kxx'
