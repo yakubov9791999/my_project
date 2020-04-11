@@ -1,7 +1,9 @@
+
 from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.pizza, name='home'),
-    path('<pizza_id>', views.pizza_detail, name='pizza-detail' )
+    path('', views.home, name='home'),
+    path('<slug:pizza_id>', views.pizza_detail, name='pizza' )
 ]
+

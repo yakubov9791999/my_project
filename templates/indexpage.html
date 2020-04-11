@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% load bootstrap4 %}
+
+{% load static %}
+{% block title %}
+Index Page
+{% endblock %}
+
+{% block body %}
+<div class="row">
+    <div class="col pizza">
+        <h1>Hello Index</h1>
+        <div>{% lorem %}</div>
+        <hr>
+        <br>
+        <p>{{ text }}</p>
+        <form method="POST">
+            {% csrf_token %}
+            <input  type="text" value="">
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+</div>
+{% endblock %}
+
