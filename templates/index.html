@@ -8,11 +8,13 @@ Index Page
 {% endblock %}
 
 {% block page %}
-salom
+
 <div class="row">
     {% for pizza in pizzas %}
     <div class="col pizza" >
-       <h3>Пицца:</h3><a href="{% url 'pizza-detail' pizza_id=pizza.id %}"><h3>{{ pizza.name }} </h3></a>
+
+
+       <h3>Пицца:</h3><a href=""><h3>{{ pizza.name }} </h3></a>
         <h3>Описание: {{ pizza.desc }} </h3>
         <h3>Цена: {{ pizza.price|floatformat:"2" }} </h3>
 

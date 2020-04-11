@@ -15,11 +15,12 @@ Pizza Detail Page
         <h3>Пицца: {{ pizza.name }} </h3>
         <h3>Описание: {{ pizza.desc }} </h3>
         <h3>Цена: {{ pizza.price|floatformat:"2" }} </h3>
-
         <img src="{{  pizza.photo.url }}" alt="{{ pizza.name }}" style="width:200px">
-
-
-
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+           {{ form.as_p }}
+        <input type="submit" value="Отправит заказ">
+        </form>
     </div>
 
 
