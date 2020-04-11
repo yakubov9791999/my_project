@@ -10,7 +10,6 @@ from django.http import HttpResponseRedirect
 
 def home(request):
     pizzas = Pizza.objects.all()
-
     return render(request, 'index.html', {
         'pizzas': pizzas,
     })
@@ -32,4 +31,3 @@ def pizza_detail(request, pizza_id):
         'pizza': pizza,
         'form': form,
     })
-
