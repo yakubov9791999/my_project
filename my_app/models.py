@@ -16,7 +16,6 @@ class PizzaShop(models.Model):
         return self.name
 
 class Pizza(models.Model):
-
     pizzashop = models.ForeignKey(PizzaShop, verbose_name='Название Магазина', on_delete=models.CASCADE)
     name = models.CharField(max_length=30, verbose_name='Название Пицца')
     desc = models.TextField(verbose_name='Описание')
@@ -41,3 +40,8 @@ class Order(models.Model):
     class Meta:
         verbose_name='Заказ'
         verbose_name_plural='Закази'
+
+
+
+    def __str__(self):
+        return self.name
